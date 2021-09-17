@@ -57,15 +57,16 @@ public class TestingJobManagerRunner implements JobManagerRunner {
         this.resultFuture = resultFuture;
         this.terminationFuture = new CompletableFuture<>();
 
-//        final ExecutionGraphInfo suspendedExecutionGraphInfo =
-//                new ExecutionGraphInfo(
-//                        ArchivedExecutionGraph.createFromInitializingJob(
-//                                jobId, "TestJob", JobStatus.SUSPENDED, null, null, 0L),
-//                        null);
-//        terminationFuture.whenComplete(
-//                (ignored, ignoredThrowable) ->
-//                        resultFuture.complete(
-//                                JobManagerRunnerResult.forSuccess(suspendedExecutionGraphInfo)));
+        //        final ExecutionGraphInfo suspendedExecutionGraphInfo =
+        //                new ExecutionGraphInfo(
+        //                        ArchivedExecutionGraph.createFromInitializingJob(
+        //                                jobId, "TestJob", JobStatus.SUSPENDED, null, null, 0L),
+        //                        null);
+        //        terminationFuture.whenComplete(
+        //                (ignored, ignoredThrowable) ->
+        //                        resultFuture.complete(
+        //
+        // JobManagerRunnerResult.forSuccess(suspendedExecutionGraphInfo)));
     }
 
     @Override
